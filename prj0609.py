@@ -2,8 +2,10 @@
 a = input("Enter the symbols: ")
 z = "abcdefghijklmnopqrstuvwxyz"
 y = z.upper()
-g = "1234567890" 
-def identifySymbols(a):
+g = "1234567890"
+
+
+def identify_symbols(a):
     for letter in a: 
         if letter == "a [len(a) - 1]":
             break
@@ -14,5 +16,7 @@ def identifySymbols(a):
         elif letter in g:
             print(letter + " is a figure.")
         else:
-             print(letter + " is an unknown character.")
-identifySymbols(a)
+            print(letter + " is an unknown character.")
+
+
+identify_symbols(a)
